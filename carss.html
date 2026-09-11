@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DRIVE X MOTORS | Premium Cars</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        DRIVE <span>X</span>
+    </div>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#offers">Offers</a>
+        <a href="#finance">Finance</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav-btn">
+        Enquire Now
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            PREMIUM AUTOMOBILES
+        </p>
+
+        <h1>
+            DRIVE YOUR
+            <span>DREAM.</span>
+        </h1>
+
+        <p class="hero-text">
+            Discover premium cars, exceptional deals and
+            a driving experience made for you.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#cars" class="primary-btn">
+                Explore Cars →
+            </a>
+
+            <a href="#contact" class="outline-btn">
+                Book Test Drive
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATS -->
+<section class="stats">
+
+    <div>
+        <strong>150+</strong>
+        <span>Cars Available</span>
+    </div>
+
+    <div>
+        <strong>10+</strong>
+        <span>Top Brands</span>
+    </div>
+
+    <div>
+        <strong>5000+</strong>
+        <span>Happy Customers</span>
+    </div>
+
+    <div>
+        <strong>10</strong>
+        <span>Years Experience</span>
+    </div>
+
+</section>
+
+
+<!-- CARS -->
+<section class="cars-section" id="cars">
+
+    <div class="section-heading">
+
+        <p>OUR COLLECTION</p>
+
+        <h2>
+            Find Your <span>Perfect Car</span>
+        </h2>
+
+        <div class="filters">
+
+            <button class="filter-btn active"
+                onclick="filterCars('all', this)">
+                All
+            </button>
+
+            <button class="filter-btn"
+                onclick="filterCars('suv', this)">
+                SUV
+            </button>
+
+            <button class="filter-btn"
+                onclick="filterCars('sedan', this)">
+                Sedan
+            </button>
+
+            <button class="filter-btn"
+                onclick="filterCars('hatchback', this)">
+                Hatchback
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="car-grid" id="carGrid">
+
+
+        <!-- CAR 1 -->
+
+        <div class="car-card" data-type="suv">
+
+            <div class="car-image suv-bg">
+                🚙
+
+                <span class="badge">
+                    FEATURED
+                </span>
+
+            </div>
+
+            <div class="car-info">
+
+                <p class="car-brand">
+                    PREMIUM SUV
+                </p>
+
+                <h3>Urban X SUV</h3>
+
+                <div class="specs">
+
+                    <span>⛽ Petrol</span>
+                    <span>⚙ Automatic</span>
+                    <span>👤 5 Seats</span>
+
+                </div>
+
+                <div class="car-bottom">
+
+                    <strong>
+                        ₹12.50 Lakh
+                    </strong>
+
+                    <button onclick="showCar('Urban X SUV')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAR 2 -->
+
+        <div class="car-card" data-type="sedan">
+
+            <div class="car-image sedan-bg">
+                🚘
+
+                <span class="badge">
+                    NEW
+                </span>
+
+            </div>
+
+            <div class="car-info">
+
+                <p class="car-brand">
+                    PREMIUM SEDAN
+                </p>
+
+                <h3>Elite S Sedan</h3>
+
+                <div class="specs">
+
+                    <span>⛽ Petrol</span>
+                    <span>⚙ Automatic</span>
+                    <span>👤 5 Seats</span>
+
+                </div>
+
+                <div class="car-bottom">
+
+                    <strong>
+                        ₹15.75 Lakh
+                    </strong>
+
+                    <button onclick="showCar('Elite S Sedan')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAR 3 -->
+
+        <div class="car-card" data-type="hatchback">
+
+            <div class="car-image hatch-bg">
+                🚗
+
+                <span class="badge">
+                    POPULAR
+                </span>
+
+            </div>
+
+            <div class="car-info">
+
+                <p class="car-brand">
+                    CITY HATCHBACK
+                </p>
+
+                <h3>City Z</h3>
+
+                <div class="specs">
+
+                    <span>⛽ Petrol</span>
+                    <span>⚙ Manual</span>
+                    <span>👤 5 Seats</span>
+
+                </div>
+
+                <div class="car-bottom">
+
+                    <strong>
+                        ₹8.25 Lakh
+                    </strong>
+
+                    <button onclick="showCar('City Z')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAR 4 -->
+
+        <div class="car-card" data-type="suv">
+
+            <div class="car-image luxury-bg">
+                🏎️
+
+                <span class="badge">
+                    LUXURY
+                </span>
+
+            </div>
+
+            <div class="car-info">
+
+                <p class="car-brand">
+                    PERFORMANCE SUV
+                </p>
+
+                <h3>Storm X</h3>
+
+                <div class="specs">
+
+                    <span>⛽ Diesel</span>
+                    <span>⚙ Automatic</span>
+                    <span>👤 5 Seats</span>
+
+                </div>
+
+                <div class="car-bottom">
+
+                    <strong>
+                        ₹22.90 Lakh
+                    </strong>
+
+                    <button onclick="showCar('Storm X')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAR 5 -->
+
+        <div class="car-card" data-type="sedan">
+
+            <div class="car-image black-bg">
+                🚖
+
+                <span class="badge">
+                    DEAL
+                </span>
+
+            </div>
+
+            <div class="car-info">
+
+                <p class="car-brand">
+                    BUSINESS SEDAN
+                </p>
+
+                <h3>Executive 5</h3>
+
+                <div class="specs">
+
+                    <span>⛽ Hybrid</span>
+                    <span>⚙ Automatic</span>
+                    <span>👤 5 Seats</span>
+
+                </div>
+
+                <div class="car-bottom">
+
+                    <strong>
+                        ₹19.50 Lakh
+                    </strong>
+
+                    <button onclick="showCar('Executive 5')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CAR 6 -->
+
+        <div class="car-card" data-type="hatchback">
+
+            <div class="car-image red-bg">
+                🏁
+
+                <span class="badge">
+                    SPORT
+                </span>
+
+            </div>
+
+            <div class="car-info">
+
+                <p class="car-brand">
+                    SPORT HATCHBACK
+                </p>
+
+                <h3>Racer GT</h3>
+
+                <div class="specs">
+
+                    <span>⛽ Petrol</span>
+                    <span>⚙ Manual</span>
+                    <span>👤 5 Seats</span>
+
+                </div>
+
+                <div class="car-bottom">
+
+                    <strong>
+                        ₹11.80 Lakh
+                    </strong>
+
+                    <button onclick="showCar('Racer GT')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OFFER -->
+<section class="offer" id="offers">
+
+    <div class="offer-content">
+
+        <p>
+            LIMITED TIME OFFER
+        </p>
+
+        <h2>
+            Drive Home Your
+            <span>Dream Car.</span>
+        </h2>
+
+        <p class="offer-text">
+            Get attractive finance options,
+            exchange benefits and special offers
+            on selected models.
+        </p>
+
+        <button onclick="showOffer()">
+            Get Offer Details →
+        </button>
+
+    </div>
+
+    <div class="offer-number">
+        0%
+        <small>DOWN PAYMENT*</small>
+    </div>
+
+</section>
+
+
+<!-- FINANCE -->
+<section class="finance" id="finance">
+
+    <div class="section-heading">
+
+        <p>CAR FINANCE</p>
+
+        <h2>
+            Calculate Your <span>EMI</span>
+        </h2>
+
+    </div>
+
+
+    <div class="finance-box">
+
+        <div class="finance-form">
+
+            <label>
+                Car Price
+            </label>
+
+            <input
+                type="number"
+                id="carPrice"
+                value="1250000"
+                oninput="calculateEMI()"
+            >
+
+
+            <label>
+                Down Payment
+            </label>
+
+            <input
+                type="number"
+                id="downPayment"
+                value="250000"
+                oninput="calculateEMI()"
+            >
+
+
+            <label>
+                Interest Rate (%)
+            </label>
+
+            <input
+                type="number"
+                id="interest"
+                value="8.5"
+                step="0.1"
+                oninput="calculateEMI()"
+            >
+
+
+            <label>
+                Loan Tenure (Years)
+            </label>
+
+            <input
+                type="number"
+                id="years"
+                value="5"
+                oninput="calculateEMI()"
+            >
+
+        </div>
+
+
+        <div class="emi-result">
+
+            <p>YOUR ESTIMATED EMI</p>
+
+            <h3 id="emi">
+                ₹20,508
+            </h3>
+
+            <span>
+                per month
+            </span>
+
+            <hr>
+
+            <p>
+                Loan Amount:
+                <strong id="loanAmount">
+                    ₹10,00,000
+                </strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="about-art">
+        🚘
+    </div>
+
+    <div class="about-content">
+
+        <p>
+            ABOUT DRIVE X
+        </p>
+
+        <h2>
+            Your Journey.
+            <span>Our Passion.</span>
+        </h2>
+
+        <p class="about-text">
+
+            At DRIVE X MOTORS, we believe buying a car
+            should be exciting, transparent and simple.
+
+            From helping you choose the right vehicle
+            to financing and after-sales support,
+            our team is here for every step of your journey.
+
+        </p>
+
+        <div class="about-points">
+
+            <div>
+                ✓ Quality Checked Cars
+            </div>
+
+            <div>
+                ✓ Transparent Pricing
+            </div>
+
+            <div>
+                ✓ Easy Finance
+            </div>
+
+            <div>
+                ✓ Trusted Service
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="contact-heading">
+
+        <p>
+            GET IN TOUCH
+        </p>
+
+        <h2>
+            Ready To <span>Drive?</span>
+        </h2>
+
+        <p>
+            Visit our showroom or contact us today.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <div>📍</div>
+
+            <h3>
+                Showroom
+            </h3>
+
+            <p>
+                123 Main Road,<br>
+                Chennai, Tamil Nadu
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div>📞</div>
+
+            <h3>
+                Call Us
+            </h3>
+
+            <p>
+                +91 98765 43210
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div>🕒</div>
+
+            <h3>
+                Opening Hours
+            </h3>
+
+            <p>
+                Mon - Sun<br>
+                9:00 AM - 8:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <a
+        class="whatsapp-btn"
+        href="https://wa.me/919876543210"
+        target="_blank"
+    >
+        💬 Chat On WhatsApp
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-logo">
+        DRIVE <span>X</span>
+    </div>
+
+    <p>
+        YOUR JOURNEY. OUR PASSION.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <small>
+        © 2026 DRIVE X MOTORS. All Rights Reserved.
+    </small>
+
+</footer>
+
+
+<!-- CAR DETAILS MODAL -->
+
+<div class="modal" id="carModal">
+
+    <div class="modal-box">
+
+        <button
+            class="modal-close"
+            onclick="closeModal()">
+            ×
+        </button>
+
+        <div class="modal-car">
+            🚘
+        </div>
+
+        <p>
+            DRIVE X MOTORS
+        </p>
+
+        <h2 id="modalCarName">
+            Car Name
+        </h2>
+
+        <div class="modal-specs">
+
+            <span>⛽ Petrol</span>
+            <span>⚙ Automatic</span>
+            <span>👤 5 Seats</span>
+            <span>❄ AC</span>
+
+        </div>
+
+        <button
+            class="modal-btn"
+            onclick="bookTestDrive()">
+            Book Test Drive
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script1.js"></script>
+
+</body>
+</html>
